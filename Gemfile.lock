@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/joneslee85/spree-heroku.git
-  revision: 3a3aa2165202f55acf689dcccc4d44648262c6a7
-  specs:
-    spree_heroku (1.0)
-      aws-sdk (~> 1.3.4)
-      spree_core (>= 0.70.0)
-
-GIT
   remote: git://github.com/spree/spree.git
   revision: 59fa8db0c54dbf95c288e579ef9127c5f781e624
   specs:
@@ -240,7 +232,6 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    ref (1.0.2)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -263,8 +254,6 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     state_machine (1.2.0)
     stringex (1.5.1)
-    therubyracer (0.11.0beta1-x86-mingw32)
-      ref
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.14)
@@ -298,6 +287,4 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_gateway!
-  spree_heroku!
-  therubyracer
   uglifier (>= 1.0.3)

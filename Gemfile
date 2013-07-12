@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 gem 'pg'
 
 group :assets do
-gem 'therubyracer'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -19,5 +18,3 @@ gem 'jquery-rails'
 gem 'spree', :github => 'spree/spree'
 gem 'spree_gateway', :github => 'spree/spree_gateway'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise'
-
-gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'

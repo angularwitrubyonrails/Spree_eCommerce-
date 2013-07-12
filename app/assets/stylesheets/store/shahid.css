@@ -251,7 +251,6 @@ wd_pro_box_border_hover_style3*/
 /*Slider ======================*/
 
 /* HEADER */
-#header {  }
 .headerimg { background-position: center top; background-repeat: no-repeat; width:100%; position:absolute; }
 
 
@@ -268,4 +267,3 @@ wd_pro_box_border_hover_style3*/
 
 /* HEADER HAVIGATION */
 #headernav-outer { position:relative; top:400px; margin:0 auto; width:960px; }
-#headernav {  }
