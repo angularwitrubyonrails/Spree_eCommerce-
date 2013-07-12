@@ -1,0 +1,23 @@
+<nav class="columns sixteen">
+  <ul id="main-nav-bar" class="inline" data-hook>
+    <li id="home-link" data-hook><%#= link_to Spree.t(:home), spree.root_path %></li>
+    <li id="link-to-cart" data-hook><%#= link_to_cart %></li>
+  </ul>
+</nav>
+
+<div id="cart" class="shoppingCart" xmlns="http://www.w3.org/1999/html">
+  <div class="heading">
+    <a>
+      <span class="cart-ico">&nbsp;</span>
+      <span class="skype" title="Skype" href="#">&nbsp;</span>
+      <%#= image_tag('/assets/store/image/cart.png') %>
+<span class="empty">
+<span class="shop-title">Shopping </span>
+<span class="shop-total">
+<span id="cart-total"  class="price"> <%= link_to_cart %></span>
+</span>
+</span>
+    </a>
+
+  </div>
+</div>

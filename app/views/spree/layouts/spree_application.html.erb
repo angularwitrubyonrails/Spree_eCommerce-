@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+<head data-hook="inside_head">
+  <%= render :partial => 'spree/shared/head' %>
+</head>
+
+<body id="index" class="cms-index-index" >
+<div class="wrapper">
+  <div class="page" id="page">
+    <%= render :partial => 'spree/shared/header' %>
+    <div id="content" class="main-container col1-layout container">
+      <div class="main">
+        <div class="col-main">
+          <div class="home">
+            <%= render :partial => 'spree/shared/slideshow' %>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+      
+
+      <div id="wrapper" class="row" data-hook>
+
+        <%= breadcrumbs(@taxon) %>
+
+        <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+
+      </div>
+      <div class="banner row">
+        <a class="span8" href="#">
+          <!--<img alt="Banner 1" src="image/banner-01.png" /> -->
+          <%= image_tag('/assets/store/image/banner-01.png') %>
+        </a>
+        <a class="span4 banner-03" href="#">
+          <!--<img alt="Banner 2" src="image/banner-02.png" />-->
+          <%= image_tag('/assets/store/image/banner-02.png') %>
+        </a>
+      </div>
+      <div class="clear">&nbsp;</div>
+
+      <%= render :partial => 'spree/shared/footer' %>
+
+
+
+    </div>
+
+    <%= render :partial => 'spree/shared/google_analytics' %>
+    <script>
+      Spree.api_key = <%= raw(try_spree_current_user.try(:spree_api_key).to_s.inspect) %>;
+    </script>
+
+
+
+
+  </div>
+</div>
+<style type="text/css">
+    #back_top{
+    }
+</style>
+<div id="back_top" class="hidden-phone" title="Back to Top">&nbsp;</div>
+</body>
+</html>

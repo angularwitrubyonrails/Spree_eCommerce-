@@ -1,0 +1,81 @@
+<!--<header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><%#= logo %></figure>
+  <%#= render :partial => 'spree/shared/nav_bar' %>
+  <%#= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+</header>-->
+
+    
+<div class="top container">
+<div class="shopLinks">
+<div class="row">
+<div class="span4">
+<div class="lan-cur"> 
+<span class="form-language">
+<form action="#" method="post" enctype="#">
+<a class="lang-flag" href="#" rel="tooltip2" title="English "><span class="selected" >en</span></a>
+<a class="lang-flag" href="#" rel="tooltip2" title="italy "><span class="no-select">it</span></a>
+</form>
+</span>
+<!-- /Block languages module -->
+<!-- Block currencies module -->
+<span class="block-currency">
+<div class="currency-content">
+<form action="#" method="post" enctype="multipart/form-data">
+<div id="currency">
+<a href="#" rel="tooltip2" title="Euro"><span class="no-selected" > €</span></a>
+<a href="#" rel="tooltip2" title="Pound Sterling"><span class="no-selected" > £</span></a>
+<a  rel="tooltip2" title="US Dollar"><span class="selected" > $</span></a>
+</div>
+</form>
+</div>
+</span>  
+</div>
+</div>
+
+<div class="span8">
+<ul class="links">
+<li class="first"> <%= link_to_cart id="wishlist-total" %> </li>
+<li> <a href="#">My Account</a> </li>
+<li> <a href="#">Shopping Cart</a> </li>
+<li class="last"> <a href="#">Checkout</a> </li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="header-container">
+<div class="header" >
+
+<div class="row">
+<div  class="span4">
+<div  class="logo">
+<a href="#"><%= logo %></a>
+</div>
+</div>
+
+ <div class="span8">
+ <div class="shop-info">
+   <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+
+<div class="top_info">
+<span class="phone">&nbsp;</span>
+<span class="number">Support +91 828 5309 796</span>
+</div>
+</div>
+
+<!-- Block search module TOP -->
+<div class="user-search">
+<div class="form-search">
+<!--<input class="search_query input-text" type="text" id="search_query_top" name="search" placeholder="Search" value=""  /> -->
+<%= render :partial => 'spree/shared/nav_bar' %>
+<!--<input type="submit" class="button-search button" name="submit_search" value="" /> -->
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<%= render :partial => 'spree/shared/dropdownmenu' %>
+<div id="notification"></div>
+</div>
+</div>

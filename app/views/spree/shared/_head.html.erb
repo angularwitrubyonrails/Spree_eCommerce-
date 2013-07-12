@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<title>Shahid shoping Hub</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<%== meta_data_tags %>
+<%= favicon_link_tag image_path('favicon.ico') %>
+<%= stylesheet_link_tag 'store/all', :media => 'screen' %>
+<%= csrf_meta_tags %>
+<%= javascript_include_tag 'store/all' %>
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+<![endif]-->
+<%= render "spree/shared/routes" %>
+<%= yield :head %>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $(".grid").click(function(e) {
+            $(".category-products ol.products-list").hide();
+            $(".category-products ul.products-grid").show();
+            $('.list').removeClass('list-active');
+            $(this).addClass('grid-active');
+            e.preventDefault();
+        });
+        $(".list").click(function(e) {
+            $(".category-products ol.products-list").show();
+            $(".category-products ul.products-grid").hide();
+            $(this).addClass('list-active');
+            $('.grid').removeClass('grid-active');
+            e.preventDefault(); });
+    });
+    jQuery(document).ready(function($){
+        $(".category-products ol.products-list").hide();
+        $(".category-products ul.products-grid").show();
+        $('.list').removeClass('list-active');
+        $('.grid').addClass('grid-active');
+    });
+</script>
