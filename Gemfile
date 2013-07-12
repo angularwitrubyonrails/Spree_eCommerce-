@@ -18,3 +18,5 @@ gem 'jquery-rails'
 gem 'spree', :github => 'spree/spree'
 gem 'spree_gateway', :github => 'spree/spree_gateway'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise'
+
+gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
